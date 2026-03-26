@@ -12,12 +12,13 @@
     <?php wp_body_open(); ?>
     <header>
     <h1>Les villes du monde</h1>
-    </header>
     <div class="menu">
         <?php wp_nav_menu([
             'theme_location' => 'main'
         ]);
     ?>
     </div>
+    </header>
+    
     
     <main>
