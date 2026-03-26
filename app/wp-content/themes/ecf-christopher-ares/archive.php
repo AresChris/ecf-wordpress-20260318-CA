@@ -1,7 +1,13 @@
 <?php
 get_header();
 ?>
-<h1><?php echo get_the_title(); ?></h1>
+<?php
+if(have_posts()):
+    while(have_posts()):
+        the_post();
+    endwhile;
+endif;  
+?>
         <article class="card_article">
                 <h1><?php the_title(); ?></h1>
                 <p>Ecrit par <?php the_author(); ?>

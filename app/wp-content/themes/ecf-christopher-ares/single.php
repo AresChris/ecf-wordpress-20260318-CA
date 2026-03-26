@@ -13,8 +13,12 @@ if(have_posts()):
                 le <?php the_date(); ?></p>
                 <?php the_content(); //contenu du post 
                 ?>
+                <div class="post_navigation">
+                    <?php echo the_post_navigation(); ?>
+                </div>
         </article>
         <?php
+        
     endwhile;
 endif;  
 ?>

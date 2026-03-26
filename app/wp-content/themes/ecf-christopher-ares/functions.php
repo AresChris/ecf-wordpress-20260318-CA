@@ -10,7 +10,7 @@ function ca_theme_menu(){
         'main' => 'top-menu'
     ]);
 }
-add_action('init', 'ca_theme_menu');
+add_action('after_setup_theme', 'ca_theme_menu');
 
 function ca_left_sidebar() {
 	register_sidebar( array(
