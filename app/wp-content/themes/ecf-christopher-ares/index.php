@@ -21,9 +21,9 @@ get_header();
             the_post();
     ?>
         <article class="article">
-                    <h1><?php the_title(); ?></h1>
+                    <a href="<?php ?>"><h1><?php the_title(); ?></h1></a>
                     <p>Ecrit par <?php the_author(); ?>
-                    le <?php the_date(); ?></p>
+                    le <?php echo get_the_date(); ?></p>
                     <?php the_content(); //contenu du post 
                     ?>
             </article>
